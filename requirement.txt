@@ -1,0 +1,5 @@
+#testing
+pytest==6.2.5
+
+#Web Testing
+selenium == 4.11.0
