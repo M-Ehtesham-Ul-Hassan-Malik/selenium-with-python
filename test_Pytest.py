@@ -1,5 +1,6 @@
 import time
 import pytest
+from pytest import mark
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,10 +9,12 @@ from selenium.common.exceptions import ElementClickInterceptedException
 
 class TestPytest:
 
+    @pytest.mark.google
     def test_navigate_google(self, browser):
         browser.get("https://www.google.com")
         time.sleep(4)
 
+    @pytest.mark.unittest
     def test_selenium_displayed(self, browser):
         browser.get("https://demoqa.com/buttons")
         browser.maximize_window()
