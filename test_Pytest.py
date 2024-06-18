@@ -9,12 +9,12 @@ from selenium.common.exceptions import ElementClickInterceptedException
 
 class TestPytest:
 
-    @pytest.mark.google
+    @mark.google
     def test_navigate_google(self, browser):
         browser.get("https://www.google.com")
         time.sleep(4)
 
-    @pytest.mark.unittest
+    @mark.unittest
     def test_selenium_displayed(self, browser):
         browser.get("https://demoqa.com/buttons")
         browser.maximize_window()
