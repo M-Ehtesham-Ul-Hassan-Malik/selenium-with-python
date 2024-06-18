@@ -19,7 +19,7 @@ This project demonstrates web automation and testing using Selenium with Python.
 
 - Python (3.7 or later)
 - ChromeDriver (compatible with your Chrome browser version)
-
+```
 ### Installation
 
 1. **Clone the repository:**
